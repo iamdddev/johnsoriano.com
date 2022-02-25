@@ -6,9 +6,7 @@ interface HeadingComposition {
   H2: React.FC<H2Props>;
 }
 
-export const Heading: React.FC & HeadingComposition = (
-  props
-): React.ReactElement => {
+export const Heading: React.FC & HeadingComposition = (props): React.ReactElement => {
   return <div>Heading</div>;
 };
 

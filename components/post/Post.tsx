@@ -1,7 +1,20 @@
 import React from "react";
+import Image from "next/image";
+import { MDXRemote } from "next-mdx-remote";
+import { Youtube, Text, Heading, Pre, Code } from "components/utilities";
+import "highlight.js/styles/atom-one-dark.css";
+
 import { PostProps } from ".";
 
-export const Post: React.FC<PostProps> = ({ children, meta }): React.ReactElement => {
+const components: any = {
+  Image,
+  Youtube,
+  p: Text,
+  h1: Heading.H1,
+  h2: Heading.H2,
+};
+
+export const Post: React.FC<PostProps> = ({ source, meta }): React.ReactElement => {
   return (
     <div className="relative py-16 bg-white overflow-hidden">
       <div className="hidden lg:block lg:absolute lg:inset-y-0 lg:h-full lg:w-full">
@@ -39,7 +52,9 @@ export const Post: React.FC<PostProps> = ({ children, meta }): React.ReactElemen
           </h1>
           {meta.excerpt && <p className="mt-8 text-xl text-gray-500 leading-8">{meta.excerpt}</p>}
         </div>
-        <div className="mt-6 prose prose-indigo prose-lg text-gray-500 mx-auto">{children}</div>
+        <div className="mt-6 prose prose-fuchsia prose-xl text-gray-800 mx-auto">
+          <MDXRemote {...source} components={components} />
+        </div>
       </div>
     </div>
   );

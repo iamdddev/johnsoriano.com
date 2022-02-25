@@ -1,13 +1,14 @@
+import { MDXRemoteSerializeResult } from "next-mdx-remote";
+import { PostMeta } from "utils/api";
 export { Post as default } from "./Post";
 export { Post } from "./Post";
 
-export interface MetaProps {
-  title: string;
-  author: string;
-  date: string;
-  excerpt: string;
+export interface MDXPost {
+    source: MDXRemoteSerializeResult<Record<string, unknown>>;
+    meta: PostMeta;
+  }
+  
+export interface PostProps extends MDXPost {
+
 }
 
-export interface PostProps {
-  meta: MetaProps;
-}
