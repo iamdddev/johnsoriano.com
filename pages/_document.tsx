@@ -11,10 +11,10 @@ class MyDocument extends Document {
     return (
       <Html className="dark">
         <Head />
-        <body>
-          <div className="bg-white dark:bg-black">
-            <Main />
-          </div>
+
+        
+        <body className="bg-white dark:bg-black">
+          <Main />
           <NextScript />
         </body>
       </Html>

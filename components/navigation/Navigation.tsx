@@ -21,40 +21,40 @@ export const Navigation: React.FC<NavigationProps> = (): React.ReactElement => {
   }, []);
 
   return (
-    <nav className="sticky-nav flex justify-between items-center max-w-4xl w-full p-8 my-0 md:my-8 mx-auto bg-white dark:bg-black bg-opacity-60">
-      <a href="#skip" className="sr-only focus:not-sr-only">
-        Skip to content
-      </a>
-      <button aria-label="Toggle Dark Mode" type="button" className="bg-gray-200 dark:bg-gray-800 rounded p-3 h-10 w-10">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" className="h-4 w-4 text-gray-800 dark:text-gray-200">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"></path>
-        </svg>
-      </button>
-      <div className="flex items-center space-x-2">
-        <Link href="/posts">
-          <a className="p-1 sm:p-4 text-gray-900 dark:text-gray-100">Posts</a>
-        </Link>
-        <Link href="/metrics">
-          <a className="p-1 sm:p-4 text-gray-900 dark:text-gray-100" href="/dashboard">
-            Metrics
-          </a>
-        </Link>
-        <Link href="/snippets">
-          <a className="p-1 sm:p-4 hidden md:inline text-gray-900 dark:text-gray-100" href="/snippets">
-            Snippets
-          </a>
-        </Link>
-        <Link href="/projects">
-          <a className="p-1 sm:p-4 text-gray-900 dark:text-gray-100" href="/projects">
-            Projects
-          </a>
-        </Link>
+    <div className=" bg-white border-b border-b-gray-200 dark:bg-black w-full sticky top-0 z-10 dark:border-b dark:border-gray-800">
+      <nav className="flex items-center justify-between max-w-2xl mx-auto px-6 md:px-0 py-6">
+        <a href="#skip" className="sr-only focus:not-sr-only">
+          Skip to content
+        </a>
+        <div className="space-x-8">
+          <Link href="/">
+            <a className="text-gray-800 dark:text-gray-100 text-md font-bold">Home</a>
+          </Link>
+          <Link href="/posts">
+            <a className="text-gray-800 dark:text-gray-100 text-md font-bold">Posts</a>
+          </Link>
+          <Link href="/metrics">
+            <a className="text-gray-800 dark:text-gray-100 text-md font-bold" href="/dashboard">
+              Metrics
+            </a>
+          </Link>
+          <Link href="/snippets">
+            <a className="hidden md:inline text-gray-800 dark:text-gray-100 text-md font-bold" href="/snippets">
+              Snippets
+            </a>
+          </Link>
+          <Link href="/projects">
+            <a className="text-gray-800 dark:text-gray-100 text-md font-bold" href="/projects">
+              Projects
+            </a>
+          </Link>
+        </div>
         <Switch
           checked={enabled}
           onChange={setEnabled}
           className={classNames(
-            enabled ? "bg-indigo-600" : "bg-gray-200",
-            "relative inline-flex flex-shrink-0 h-5 w-10 border-2 border-transparent rounded-full cursor-pointer transition-colors ease-in-out duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+            enabled ? "bg-purple-600" : "bg-gray-200",
+            "relative inline-flex flex-shrink-0 h-5 w-10 border-2 border-transparent rounded-full cursor-pointer transition-colors ease-in-out duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-purple-500"
           )}
         >
           <span className="sr-only">Use setting</span>
@@ -72,7 +72,12 @@ export const Navigation: React.FC<NavigationProps> = (): React.ReactElement => {
               aria-hidden="true"
             >
               <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" />
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"
+                />
               </svg>
             </span>
             <span
@@ -83,18 +88,13 @@ export const Navigation: React.FC<NavigationProps> = (): React.ReactElement => {
               aria-hidden="true"
             >
               <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"
-                />
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" />
               </svg>
             </span>
           </span>
         </Switch>
-      </div>
-    </nav>
+      </nav>
+    </div>
   );
 };
 
