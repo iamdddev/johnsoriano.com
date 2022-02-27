@@ -5,6 +5,8 @@ import { HeroProps } from ".";
 
 export const Hero: React.FC<HeroProps> = (): React.ReactElement => {
   const colors = ["#F59E0B", "#84CC16", "#10B981", "#3B82F6"];
+
+  
   return (
     <div className="flex flex-row justify-center items-start overflow-hidden">
       <div className="w-full md:w-1/2 mx-auto text-center md:text-left lg:p-20">
