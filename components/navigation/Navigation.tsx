@@ -18,7 +18,7 @@ export const Navigation: React.FC<NavigationProps> = (): React.ReactElement => {
 
   useEffect(() => {
     if (theme === "dark") setEnabled(true);
-  }, []);
+  }, [theme]);
 
   return (
     <div className=" bg-white border-b border-b-gray-200 dark:bg-black w-full sticky top-0 z-10 dark:border-b dark:border-gray-800">
