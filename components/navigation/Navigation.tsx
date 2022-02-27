@@ -34,19 +34,13 @@ export const Navigation: React.FC<NavigationProps> = (): React.ReactElement => {
             <a className="text-gray-800 dark:text-gray-100 text-md font-bold">Posts</a>
           </Link>
           <Link href="/metrics">
-            <a className="text-gray-800 dark:text-gray-100 text-md font-bold" href="/dashboard">
-              Metrics
-            </a>
+            <a className="text-gray-800 dark:text-gray-100 text-md font-bold">Metrics</a>
           </Link>
           <Link href="/snippets">
-            <a className="hidden md:inline text-gray-800 dark:text-gray-100 text-md font-bold" href="/snippets">
-              Snippets
-            </a>
+            <a className="hidden md:inline text-gray-800 dark:text-gray-100 text-md font-bold">Snippets</a>
           </Link>
           <Link href="/projects">
-            <a className="text-gray-800 dark:text-gray-100 text-md font-bold" href="/projects">
-              Projects
-            </a>
+            <a className="text-gray-800 dark:text-gray-100 text-md font-bold">Projects</a>
           </Link>
         </div>
         <Switch
