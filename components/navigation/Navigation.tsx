@@ -14,7 +14,7 @@ export const Navigation: React.FC<NavigationProps> = (): React.ReactElement => {
 
   useEffect(() => {
     setTheme(enabled ? "dark" : "light");
-  }, [enabled]);
+  }, [enabled, setTheme]);
 
   useEffect(() => {
     if (theme === "dark") setEnabled(true);
