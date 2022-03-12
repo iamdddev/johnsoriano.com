@@ -5,7 +5,6 @@ import useDarkMode from "hooks/useDarkMode";
 import Layout from "components/layout";
 import Navigation from "components/navigation";
 import Footer from "components/footer";
-import Image from "next/image";
 
 const links = [
   {
@@ -30,15 +29,11 @@ const Home: NextPage = () => {
   const [theme, setTheme] = useDarkMode();
   return (
     <Layout navigation={<Navigation links={links} />} footer={<Footer />}>
-      <div className="mt-24 space-y-44">
-        <div className="space-y-6">
-          <Hero />
-          <button className="bg-pink-700 hover:bg-blue-light text-slate-50 font-bold py-2 px-4 border-b-4 border-pink-900 hover:border-blue rounded">Start here</button>
-        </div>
-        {/* <div className="space-y-56">
-          <h2 className="text-xl text-slate-700 dark:text-slate-200 font-bold my-2">Featured Posts</h2>
-          <Image src="/image-1.jpg" width={400} height={400} className="object-cover" />
-        </div> */}
+      <div>
+        <Hero />
+        <div>I'm John Soriano, web developer and integration expert based in Manila, Philippines</div>
+        <div>I've been building things for the web for last 5 years, working with clients accross various industries.</div>
+        <div>My Focus is building tools and web integration for existing workflow such as Notion, Airtable, Shopify and some low-code implementation</div>
       </div>
     </Layout>
   );

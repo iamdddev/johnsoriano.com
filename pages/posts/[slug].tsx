@@ -11,13 +11,28 @@ import Navigation from "components/navigation";
 import Footer from "components/footer";
 import "highlight.js/styles/atom-one-dark.css";
 
+const links = [
+  {
+    text: "About",
+    link: "/about",
+  },
+  {
+    text: "Posts",
+    link: "/posts",
+  },
+  {
+    text: "Snippets",
+    link: "/snippets",
+  },
+];
+
 export default function Post({ post }: { post: MDXPost }) {
   return (
     <>
       <Head>
         <title>{post.meta.title}</title>
       </Head>
-      <Layout navigation={<Navigation />} footer={<Footer />}>
+      <Layout navigation={<Navigation bordered links={links} />} footer={<Footer />}>
         <PostComponent {...post} />
       </Layout>
     </>
