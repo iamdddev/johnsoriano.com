@@ -32,7 +32,7 @@ export default function Post({ post }: { post: MDXPost }) {
       <Head>
         <title>{post.meta.title}</title>
       </Head>
-      <Layout navigation={<Navigation bordered links={links} />} footer={<Footer />}>
+      <Layout navigation={<Navigation branded bordered links={links} />} footer={<Footer />}>
         <PostComponent {...post} />
       </Layout>
     </>

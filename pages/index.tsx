@@ -9,20 +9,20 @@ import Image from "next/image";
 
 const links = [
   {
-    text: "About",
-    link: "/about",
+    text: "Service",
+    link: "/service",
   },
   {
     text: "Posts",
     link: "/posts",
   },
   {
-    text: "Uses",
-    link: "/uses",
+    text: "Code",
+    link: "/snippets",
   },
   {
-    text: "Snippets",
-    link: "/snippets",
+    text: "About",
+    link: "/about",
   },
 ];
 
@@ -31,14 +31,19 @@ const Home: NextPage = () => {
   return (
     <Layout navigation={<Navigation links={links} />} footer={<Footer />}>
       <div className="mt-24 space-y-44">
-        <div className="space-y-6">
+        <div className="space-y-8">
           <Hero />
-          <button className="bg-pink-700 hover:bg-blue-light text-slate-50 font-bold py-2 px-4 border-b-4 border-pink-900 hover:border-blue rounded">Start here</button>
         </div>
-        {/* <div className="space-y-56">
-          <h2 className="text-xl text-slate-700 dark:text-slate-200 font-bold my-2">Featured Posts</h2>
-          <Image src="/image-1.jpg" width={400} height={400} className="object-cover" />
-        </div> */}
+        <div className="space-y-16">
+          <div className="flex items-center text-slate-700 dark:text-slate-200">
+            <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+              <path fillRule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clipRule="evenodd" />
+            </svg>
+            <h2 className="text-base font-bold my-2">Featured Posts</h2>
+          </div>
+
+          <div>Reece</div>
+        </div>
       </div>
     </Layout>
   );

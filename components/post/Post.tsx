@@ -21,7 +21,7 @@ const components: any = {
 
 export const Post: React.FC<PostProps> = ({ source, meta }): React.ReactElement => {
   return (
-    <div className="relative py-16 overflow-hidden">
+    <div className="relative overflow-hidden">
       <div className="relative">
         <div className="text-lg mx-auto">
           <h1 className="mt-2 block sm:text-center font-extrabold tracking-tight text-slate-800 dark:text-slate-50 text-3xl sm:text-4xl">{meta.title} and make better choices</h1>
