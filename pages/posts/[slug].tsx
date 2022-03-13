@@ -4,7 +4,7 @@ import rehypeHighlight from "rehype-highlight";
 import { GetStaticPaths, GetStaticProps } from "next";
 import { serialize } from "next-mdx-remote/serialize";
 import Head from "next/head";
-import { getPostFromSlug, getSlugs, PostMeta } from "utils/api";
+import { getPostFromSlug, getSlugs } from "utils/api";
 import PostComponent, { MDXPost } from "components/post";
 import Layout from "components/layout";
 import Navigation from "components/navigation";
@@ -13,16 +13,16 @@ import "highlight.js/styles/atom-one-dark.css";
 
 const links = [
   {
-    text: "Services",
-    link: "/services",
+    text: "About",
+    link: "/about",
+  },
+  {
+    text: "Codes",
+    link: "/code",
   },
   {
     text: "Posts",
     link: "/posts",
-  },
-  {
-    text: "About",
-    link: "/about",
   },
 ];
 
