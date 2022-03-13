@@ -12,3 +12,7 @@ export interface PostProps extends MDXPost {
 
 }
 
+export interface PostListProps {
+  posts: PostMeta[]
+}
+

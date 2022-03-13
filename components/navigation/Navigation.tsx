@@ -39,7 +39,7 @@ export const Navigation: React.FC<NavigationProps> = ({ bordered, links, branded
         {branded && (
           <div className="hidden sm:block">
             <Link href="/">
-              <a className="text-slate-700 dark:text-slate-50 text-xs font-extrabold">JSØ</a>
+              <a className="text-slate-700 dark:text-slate-50 text-xs font-extrabold">John Soriano</a>
             </Link>
           </div>
         )}
@@ -53,7 +53,7 @@ export const Navigation: React.FC<NavigationProps> = ({ bordered, links, branded
           </div>
 
           <div className="flex items-center space-x-4">
-            <button className="flex text-[0.8em] items-center space-x-1 bg-pink-500 hover:bg-blue-light text-slate-50 font-bold py-1 px-2 border-pink-900 rounded-full">
+            <button className="flex text-[0.8em] items-center bg-pink-500 hover:bg-blue-light text-slate-50 font-bold py-1 px-2 border-pink-900 rounded-full">
               <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4" viewBox="0 0 20 20" fill="currentColor">
                 <path fillRule="evenodd" d="M11.3 1.046A1 1 0 0112 2v5h4a1 1 0 01.82 1.573l-7 10A1 1 0 018 18v-5H4a1 1 0 01-.82-1.573l7-10a1 1 0 011.12-.38z" clipRule="evenodd" />
               </svg>

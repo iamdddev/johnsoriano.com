@@ -6,31 +6,26 @@ import Footer from "components/footer";
 
 const links = [
   {
-    text: "About",
-    link: "/about",
+    text: "Home",
+    link: "/",
   },
   {
     text: "Posts",
     link: "/posts",
   },
   {
-    text: "Uses",
-    link: "/uses",
-  },
-  {
-    text: "Snippets",
-    link: "/snippets",
+    text: "Code",
+    link: "/code",
   },
 ];
 
 const Home: NextPage = () => {
   return (
     <Layout navigation={<Navigation links={links} />} footer={<Footer />}>
-      <div>
-        <Hero />
-        <div>I&apos;m John Soriano, web developer and integration expert based in Manila, Philippines</div>
-        <div>I&apos;ve been building things for the web for last 5 years, working with clients accross various industries.</div>
-        <div>My Focus is building tools and web integration for existing workflow such as Notion, Airtable, Shopify and some low-code implementation</div>
+      <div className="mt-6 prose prose-fuchsia prose-xl text-slate-800 dark:text-slate-50 mx-auto">
+        <p>I&apos;m John Soriano, web developer and integration expert based in Manila, Philippines</p>
+        <p>I&apos;ve been building things for the web for last 5 years, working with clients accross various industries.</p>
+        <p>My Focus is building tools and web integration for existing workflow such as Notion, Airtable, Shopify and some low-code implementation</p>
       </div>
     </Layout>
   );
