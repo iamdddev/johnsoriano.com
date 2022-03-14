@@ -124,8 +124,8 @@ const PrivacyPage: NextPage = () => {
         <h3>Usage Data</h3>
         <p>Usage Data is collected automatically when using the Service.</p>
         <p>
-          Usage Data may include information such as Your Device's Internet Protocol address (e.g. IP address), browser type, browser version, the pages of our Service that You
-          visit, the time and date of Your visit, the time spent on those pages, unique device identifiers and other diagnostic data.
+          Usage Data may include information such as Your Device&apos;s Internet Protocol address (e.g. IP address), browser type, browser version, the pages of our Service that
+          You visit, the time and date of Your visit, the time spent on those pages, unique device identifiers and other diagnostic data.
         </p>
         <p>
           When You access the Service by or through a mobile device, We may collect certain information automatically, including, but not limited to, the type of mobile device You
@@ -220,7 +220,7 @@ const PrivacyPage: NextPage = () => {
           </li>
           <li>
             <p>
-              <b>To contact You:</b> To contact You by email, telephone calls, SMS, or other equivalent forms of electronic communication, such as a mobile application's push
+              <b>To contact You:</b> To contact You by email, telephone calls, SMS, or other equivalent forms of electronic communication, such as a mobile application&apos;s push
               notifications regarding updates or informative communications related to the functionalities, products or contracted services, including the security updates, when
               necessary or reasonable for their implementation.
             </p>
@@ -286,7 +286,7 @@ const PrivacyPage: NextPage = () => {
         </p>
         <h2 className="font-sans text-sm font-extrabold dark:text-slate-50 text-slate-800">Transfer of Your Personal Data</h2>
         <p>
-          Your information, including Personal Data, is processed at the Company's operating offices and in any other places where the parties involved in the processing are
+          Your information, including Personal Data, is processed at the Company&apos;s operating offices and in any other places where the parties involved in the processing are
           located. It means that this information may be transferred to — and maintained on — computers located outside of Your state, province, country or other governmental
           jurisdiction where the data protection laws may differ than those from Your jurisdiction.
         </p>
@@ -341,20 +341,20 @@ const PrivacyPage: NextPage = () => {
             </p>
           </li>
         </ul>
-        <h1 className="font-sans text-lg font-extrabold dark:text-slate-50 text-slate-800">Children's Privacy</h1>
+        <h1 className="font-sans text-lg font-extrabold dark:text-slate-50 text-slate-800">Children&apos;s Privacy</h1>
         <p>
           Our Service does not address anyone under the age of 13. We do not knowingly collect personally identifiable information from anyone under the age of 13. If You are a
           parent or guardian and You are aware that Your child has provided Us with Personal Data, please contact Us. If We become aware that We have collected Personal Data from
           anyone under the age of 13 without verification of parental consent, We take steps to remove that information from Our servers.
         </p>
         <p>
-          If We need to rely on consent as a legal basis for processing Your information and Your country requires consent from a parent, We may require Your parent's consent
+          If We need to rely on consent as a legal basis for processing Your information and Your country requires consent from a parent, We may require Your parent&apos;s consent
           before We collect and use that information.
         </p>
         <h1 className="font-sans text-lg font-extrabold dark:text-slate-50 text-slate-800">Links to Other Websites</h1>
         <p>
-          Our Service may contain links to other websites that are not operated by Us. If You click on a third party link, You will be directed to that third party's site. We bly
-          advise You to review the Privacy Policy of every site You visit.
+          Our Service may contain links to other websites that are not operated by Us. If You click on a third party link, You will be directed to that third party&apos;s site. We
+          bly advise You to review the Privacy Policy of every site You visit.
         </p>
         <p>We have no control over and assume no responsibility for the content, privacy policies or practices of any third party sites or services.</p>
         <h1 className="font-sans text-lg font-extrabold dark:text-slate-50 text-slate-800">Changes to this Privacy Policy</h1>
