@@ -14,6 +14,10 @@ const links = [
     text: "Posts",
     link: "/posts",
   },
+  {
+    text: "Résumé",
+    link: "/resume",
+  },
 ];
 
 const PostsPage: NextPage<{ posts: any }> = ({ posts }) => {

@@ -20,6 +20,10 @@ const links = [
     text: "Posts",
     link: "/posts",
   },
+  {
+    text: "Résumé",
+    link: "/resume",
+  },
 ];
 
 export default function Post({ post }: { post: MDXPost }) {

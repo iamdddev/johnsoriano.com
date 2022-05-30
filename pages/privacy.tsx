@@ -13,6 +13,10 @@ const links = [
     text: "Posts",
     link: "/posts",
   },
+  {
+    text: "Résumé",
+    link: "/resume",
+  },
 ];
 
 const PrivacyPage: NextPage = () => {
