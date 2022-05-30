@@ -25,7 +25,7 @@ const PostsPage: NextPage<{ posts: any }> = ({ posts }) => {
     <Layout navigation={<Navigation branded links={links} />} footer={<Footer />}>
       <div className="space-y-32">
         <div className="mb-20">
-          <h2 className="text-base text-slate-700 dark:text-slate-500 font-bold my-2">Blog Posts</h2>
+          <h2 className="text-sm text-slate-700 dark:text-slate-200 font-bold font-sans my-2">Blog Posts</h2>
           <PostList posts={posts} />
         </div>
       </div>
