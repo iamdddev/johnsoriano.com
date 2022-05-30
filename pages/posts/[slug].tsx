@@ -13,6 +13,10 @@ import "highlight.js/styles/atom-one-dark.css";
 
 const links = [
   {
+    text: "Home",
+    link: "/",
+  },
+  {
     text: "About",
     link: "/about",
   },

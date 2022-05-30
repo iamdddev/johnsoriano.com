@@ -8,6 +8,10 @@ import Highlighther from "components/highligther";
 
 const links = [
   {
+    text: "Home",
+    link: "/",
+  },
+  {
     text: "About",
     link: "/about",
   },

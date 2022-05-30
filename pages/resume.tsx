@@ -7,6 +7,10 @@ import Head from "next/head";
 
 const links = [
   {
+    text: "Home",
+    link: "/",
+  },
+  {
     text: "About",
     link: "/about",
   },

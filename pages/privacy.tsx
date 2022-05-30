@@ -6,6 +6,10 @@ import { ContactForm } from "components/form";
 
 const links = [
   {
+    text: "Home",
+    link: "/",
+  },
+  {
     text: "About",
     link: "/about",
   },

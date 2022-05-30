@@ -7,6 +7,10 @@ import PostList from "components/post/PostList";
 
 const links = [
   {
+    text: "Home",
+    link: "/",
+  },
+  {
     text: "About",
     link: "/about",
   },

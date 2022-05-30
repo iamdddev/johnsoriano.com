@@ -5,6 +5,10 @@ import Footer from "components/footer";
 
 const links = [
   {
+    text: "Home",
+    link: "/",
+  },
+  {
     text: "About",
     link: "/about",
   },
