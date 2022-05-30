@@ -5,6 +5,8 @@ import Navigation from "components/navigation";
 import Footer from "components/footer";
 import { getAllPosts } from "utils/api";
 import PostList from "components/post/PostList";
+import Head from "next/head";
+import Link from "next/link";
 
 const links = [
   {
@@ -12,31 +14,36 @@ const links = [
     link: "/about",
   },
   {
-    text: "Codes",
-    link: "/code",
-  },
-  {
     text: "Posts",
     link: "/posts",
+  },
+  {
+    text: "Résumé",
+    link: "/resume",
   },
 ];
 
 const Home: NextPage<{ posts: any }> = ({ posts }) => {
   return (
-    <Layout navigation={<Navigation branded links={links} />} footer={<Footer />}>
-      <div className="space-y-32">
-        <div className="space-y-8">
-          <Hero />
-          {/* <Link href="/services">
-            <button className="bg-gradient-to-tl from-purple-500 via-pink-500 to-fuchsia-600 text-slate-50 font-bold py-2 px-4 rounded">Services</button>
-          </Link> */}
+    <>
+      <Head>
+        <title>John Soriano - Full Stack Engineer</title>
+      </Head>
+      <Layout navigation={<Navigation branded links={links} />} footer={<Footer />}>
+        <div className="space-y-32">
+          <div className="space-y-8">
+            <Hero />
+            {/* <Link href="/services">
+              <button className=" bg-purple-500 text-slate-50 font-bold py-2 px-4 rounded">Services</button>
+            </Link> */}
+          </div>
+          <div className="mb-20">
+            <h2 className="text-sm text-slate-700 dark:text-slate-50 font-semibold my-2 font-sans">Featured Posts</h2>
+            <PostList posts={posts} />
+          </div>
         </div>
-        <div className="mb-20">
-          <h2 className="text-base text-slate-700 dark:text-slate-500 font-bold my-2">Featured Posts</h2>
-          <PostList posts={posts} />
-        </div>
-      </div>
-    </Layout>
+      </Layout>
+    </>
   );
 };
 

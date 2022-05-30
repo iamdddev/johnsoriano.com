@@ -1,5 +1,4 @@
 import { useEffect, useState } from "react";
-import { MenuAlt2Icon } from "@heroicons/react/outline";
 import Link from "next/link";
 import { NavigationProps } from ".";
 import useDarkMode from "hooks/useDarkMode";
@@ -53,12 +52,18 @@ export const Navigation: React.FC<NavigationProps> = ({ bordered, links, branded
           </div>
 
           <div className="flex items-center space-x-4">
-            <button className="flex text-[0.8em] items-center bg-pink-500 hover:bg-blue-light text-slate-50 font-bold py-1 px-2 border-pink-900 rounded-full">
-              <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4" viewBox="0 0 20 20" fill="currentColor">
-                <path fillRule="evenodd" d="M11.3 1.046A1 1 0 0112 2v5h4a1 1 0 01.82 1.573l-7 10A1 1 0 018 18v-5H4a1 1 0 01-.82-1.573l7-10a1 1 0 011.12-.38z" clipRule="evenodd" />
-              </svg>
-              <span className="hidden md:block">Available</span>
-            </button>
+            <Link href="/about">
+              <a className="flex text-[0.8em] items-center bg-pink-500 hover:bg-blue-light text-slate-50 font-bold py-1 px-2 border-pink-900 rounded-full">
+                <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4" viewBox="0 0 20 20" fill="currentColor">
+                  <path
+                    fillRule="evenodd"
+                    d="M11.3 1.046A1 1 0 0112 2v5h4a1 1 0 01.82 1.573l-7 10A1 1 0 018 18v-5H4a1 1 0 01-.82-1.573l7-10a1 1 0 011.12-.38z"
+                    clipRule="evenodd"
+                  />
+                </svg>
+                <span className="hidden md:block">Available</span>
+              </a>
+            </Link>
             {enabled && (
               <svg
                 onClick={() => setEnabled(false)}
