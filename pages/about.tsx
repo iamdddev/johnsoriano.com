@@ -35,7 +35,10 @@ const Home: NextPage = () => {
         <div className="space-y-4">
           <div className="mt-6 prose prose-fuchsia prose-xl text-slate-800 dark:text-slate-50 mx-auto">
             <p>I&apos;m John Soriano, Full Stack Developer based in Manila, Philippines</p>
-            <p>I&apos;ve been building things for the web in the last 6 years accross various industries.</p>
+            <p>
+              I developed countless web applications over the last 6+ years. With a combined knowledge of both backend and frontend, I helped small and medium-sized businesses in
+              various industries such as manufacturing, finance, and commerce to deliver real value to their customers.
+            </p>
           </div>
           <div>
             <Highlighther color="red">hire@johnsoriano.dev</Highlighther>
