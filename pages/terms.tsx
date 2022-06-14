@@ -18,7 +18,7 @@ const links = [
   },
   {
     text: "Résumé",
-    link: "/resume",
+    link: "https://drive.google.com/file/d/1VCRl0_HhXuf-hJ25k6tZ2BRdCSrz5PM9/view?usp=sharing",
   },
 ];
 
